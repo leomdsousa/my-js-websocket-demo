@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <title>WebSocket Demo</title>
+    <meta charset="utf-8">
+    <meta name="description" value="My First WebSocket Demo">
+    <link rel="stylesheet" type="text/css" href="/style.css"></link>
+  </head>
+  <body>
+    <h1 id="title">My First WebSocket Client Demo</h1>
+    
+    <div id="status">Waiting for the websocket connection...</div>
+
+    <div id="messages">
+
+    </div>
+
+    <form id="message-form" action="#" method="post">
+      <div id="reply">
+        <button id="connect" type="button">Connect</button>
+        <button id="close" type="button" disabled>Disconnect</button>
+        <div class="wrapper">
+          <input id="message" type="text" placeholder="Say something!"/>
+          <button id="send" type="submit">Send</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+
